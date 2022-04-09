@@ -24,9 +24,6 @@ export const AuthActionCreators = {
                 } else {
                     dispatch(AuthActionCreators.setError('Неверный логин или пароль'));
                 }
-                if (password.length < 8) {
-                    dispatch(AuthActionCreators.setError('Пароль должен быть не меньше 8 символов'));
-                }
                 dispatch(AuthActionCreators.setIsLoading(false));
                 dispatch(AuthActionCreators.setIsModal(false));
             }, 1000);
