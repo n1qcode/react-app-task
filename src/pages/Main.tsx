@@ -6,21 +6,15 @@ import MedLogoRight from "../imgs/med3.png";
 import {RouteNames} from "../router";
 import {useNavigate} from "react-router-dom";
 import {useActions} from "../hooks/useActions";
-import {useTypedSelector} from "../hooks/useTypedSelector";
 import Modal from "../components/Modal";
 
 const Main : FC = () => {
     const router = useNavigate();
     const {setIsModal} = useActions();
-    const { isModal } = useTypedSelector(state => state.auth);
 
     return (
         <div className='main'>
-            {isModal ?
                 <Modal />
-                :
-                null
-            }
             <h1>Место для получения медицинской помощи</h1>
             <div className='main_buttons'>
             <button className='main_btn_login' onClick={() => setIsModal(true)}><p className='main_btn_login_name'>Войти</p></button>
