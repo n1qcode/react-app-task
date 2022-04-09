@@ -18,7 +18,7 @@ const App:FC = () => {
     return (
         <div>
             <Navbar />
-                    <AppRouter />
+                <AppRouter />
         </div>
     );
 };
