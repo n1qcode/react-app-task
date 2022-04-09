@@ -6,14 +6,11 @@ import Modal from "../components/Modal";
 
 const Contacts: FC = () => {
     const router = useNavigate();
-    const { isAuth, isModal } = useTypedSelector(state => state.auth)
+    const { isAuth } = useTypedSelector(state => state.auth);
+
     return (
         <div className='main_contacts'>
-            {isModal ?
                 <Modal />
-                :
-                null
-            }
             <h1>Контакты</h1>
             <div className='main_buttons'>
                 <button className='main_btn_contacts_on' onClick={isAuth ? () => router(RouteNames.LOGIN) : () => router(RouteNames.MAIN)}><p className='main_btn_contacts_name'>Вернуться на главную</p></button>
