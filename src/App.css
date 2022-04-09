@@ -298,12 +298,36 @@ body {
     margin-top: 55px;
   }
 
+  .main_on {
+    margin-left: 10px;
+    margin-top: 55px;
+  }
+
+  .main_contacts {
+    margin-left: 10px;
+    margin-top: 55px;
+  }
+
   .main h1 {
     font-size: 28px;
     line-height: 39px;
     width: 355px;
     height: 89px;
     margin-bottom: 35px;
+  }
+
+  .main_on h1 {
+    font-size: 28px;
+    line-height: 39px;
+    width: 355px;
+    height: 89px;
+  }
+
+  .main_contacts h1 {
+    font-size: 28px;
+    line-height: 39px;
+    width: 355px;
+    height: 89px;
   }
 
   .main_cards {
@@ -337,9 +361,17 @@ body {
   .main_cards_text {
     margin-bottom: 35px;
   }
-  
+
   .modal_form_login-body {
     width: 335px;
+  }
+
+  .main_buttons_login {
+    display: block;
+  }
+
+  .main_btn_login_on_mob {
+    margin-bottom: 20px;
   }
 
 }
