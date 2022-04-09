@@ -28,6 +28,7 @@ export const AuthActionCreators = {
                     dispatch(AuthActionCreators.setError('Пароль должен быть не меньше 8 символов'));
                 }
                 dispatch(AuthActionCreators.setIsLoading(false));
+                dispatch(AuthActionCreators.setIsModal(false));
             }, 1000);
         } catch (e) {
             dispatch(AuthActionCreators.setError('Ошибка при входе'));
