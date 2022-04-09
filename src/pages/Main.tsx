@@ -3,12 +3,11 @@ import "../App.css";
 import MedLogoLeft from "../imgs/med1.png";
 import MedLogoMiddle from "../imgs/med2.png";
 import MedLogoRight from "../imgs/med3.png";
-import LoginForm from "../components/LoginForm";
-import {Card} from "antd";
 import {RouteNames} from "../router";
 import {useNavigate} from "react-router-dom";
 import {useActions} from "../hooks/useActions";
 import {useTypedSelector} from "../hooks/useTypedSelector";
+import Modal from "../components/Modal";
 
 const Main : FC = () => {
     const router = useNavigate();
@@ -18,17 +17,10 @@ const Main : FC = () => {
     return (
         <div className='main'>
             {isModal ?
-                <div className='modal_form_login'>
-                    <div className='modal_form_login-body'>
-                        <Card>
-                        <LoginForm />
-                        </Card>
-                    </div>
-                </div>
+                <Modal />
                 :
                 null
             }
-
             <h1>Место для получения медицинской помощи</h1>
             <div className='main_buttons'>
             <button className='main_btn_login' onClick={() => setIsModal(true)}><p className='main_btn_login_name'>Войти</p></button>
