@@ -12,8 +12,8 @@ const Login: FC = () => {
     return (
         <div className='main_on'>
             <h1>Привет, {user.username}</h1>
-            <div className='main_buttons'>
-                <button className='main_btn_login_on' onClick={() => {logout(); setIsModal(false);}}><p className='main_btn_login_name'>Выйти из аккаунта</p></button>
+            <div className='main_buttons main_buttons_login'>
+                <button className='main_btn_login_on main_btn_login_on_mob' onClick={() => {logout(); setIsModal(false);}}><p className='main_btn_login_name'>Выйти из аккаунта</p></button>
                 <button className='main_btn_contacts_on' onClick={() => router(RouteNames.CONTACTS)}><p className='main_btn_contacts_name'>Перейти в контакты</p></button>
             </div>
         </div>
