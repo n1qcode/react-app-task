@@ -337,5 +337,9 @@ body {
   .main_cards_text {
     margin-bottom: 35px;
   }
+  
+  .modal_form_login-body {
+    width: 335px;
+  }
 
 }
